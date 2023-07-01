@@ -12,43 +12,44 @@ public:
      double add() {
         double result;
         result = num1 + num2;
-        std::cout <<"num1 + num2 = " << result << "\n";
-        return 0;
+        //std::cout <<"num1 + num2 = " << result << "\n";
+        //return 0;
+        return result;
      }
    
     double multiply() {
         double result;
         result = num1 * num2;
-        std::cout << "num1 * num2 = " << result << "\n";
-        return 0;
+        //std::cout << "num1 * num2 = " << result << "\n";
+        return result;
     }
 
     double subtract_1_2() {
         double result;
         result = num1 - num2;
-        std::cout << "num1 - num2 = " << result << "\n";
-        return 0;
+        //std::cout << "num1 - num2 = " << result << "\n";
+        return result;
     }
 
     double subtract_2_1() {
         double result;
         result = num2 - num1;
-        std::cout << "num2 - num1 = " << result << "\n";
-        return 0;
+        //std::cout << "num2 - num1 = " << result << "\n";
+        return result;
     }
 
     double divide_1_2() {
         double result;
         result = num1 / num2;
-        std::cout << "num1 / num2 = " << result << "\n";
-        return 0;
+        //std::cout << "num1 / num2 = " << result << "\n";
+        return result;
     }
 
     double divide_2_1() {
         double result;
         result = num2 / num1;
-        std::cout << "num2 / num1 = " << result << "\n";
-        return 0;
+        //std::cout << "num2 / num1 = " << result << "\n";
+        return result;
     }
 
    bool set_num1(double num1) {
@@ -108,12 +109,18 @@ int main()
          std::cout << "Неверный ввод! \n";
         }
                              
-        c.add();
-        c.multiply();
-        c.subtract_1_2();
-        c.subtract_2_1();
-        c.divide_1_2();
-        c.divide_2_1();
+        //c.add();
+        std::cout << "num-1 + num2 = " << c.add() << "\n";
+        //c.multiply();
+        std::cout << "num1 * num2 = " << c.multiply() << "\n";
+        //c.subtract_1_2();
+        std::cout << "num1 - num2 = " << c.subtract_1_2() << "\n";
+        //c.subtract_2_1();
+        std::cout << "num2 - num1 = " << c.subtract_2_1() << "\n";
+        //c.divide_1_2();
+        std::cout << "num1 / num2 = " << c.divide_1_2() << "\n";
+        //c.divide_2_1();
+        std::cout << "num2 / num1 = " << c.divide_2_1() << "\n";
     }
     std::cout << "\n\nHello World!\n";
 }
